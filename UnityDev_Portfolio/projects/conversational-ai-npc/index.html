@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Rey — Portfolio</title>
+<script>
+  const routes = {"/project/1":"/projects/a-non-farming-game/","/project/4":"/projects/game-transactions-backend/","/project/6":"/projects/eongate-vr-optimization/","/project/2":"/projects/golden-hand/","/project/3":"/projects/atrapamonstres/","/project/5":"/projects/conversational-ai-npc/","/project/7":"/projects/blackjack-api/","/project/8":"/projects/web-hosting-tuwebya/"};
+  const path = location.pathname.replace(/^\/UnityDev_Portfolio(?=\/|$)/i, '').replace(/\/index\.html$/, '/');
+  const destination = routes[path.replace(/\/$/, '')] || path || '/';
+  location.replace('https://viid21.github.io' + destination + location.search + location.hash);
+</script>
+<style>body{font:18px system-ui;background:#0a0a0a;color:#f5f5f5;max-width:640px;margin:15vh auto;padding:24px}a{color:inherit}</style>
+</head><body><p>David Rey's portfolio has moved.</p><a href="https://viid21.github.io/">Visit the portfolio</a></body></html>
